@@ -93,15 +93,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\Northwind.mdb" />
-    <Content Include="Login.aspx" />
+    <Content Include="IniciarSesion.aspx" />
+    <Content Include="VerProductos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Login.aspx.designer.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="IniciarSesion.aspx.designer.vb">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Login.aspx.vb">
-      <DependentUpon>Login.aspx</DependentUpon>
+    <Compile Include="IniciarSesion.aspx.vb">
+      <DependentUpon>IniciarSesion.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -128,6 +129,13 @@
     </Compile>
     <Compile Include="Site1.Master.vb">
       <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="VerProductos.aspx.designer.vb">
+      <DependentUpon>VerProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerProductos.aspx.vb">
+      <DependentUpon>VerProductos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

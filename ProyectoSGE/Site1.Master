@@ -11,9 +11,7 @@
     <style type="text/css">
         td {
             background-color: #99CCFF;
-        }
-        td {
-            width: 300px;
+            width: 400px;
         }
     </style>
 </head>
