@@ -92,12 +92,20 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AnadirRegistros.aspx" />
     <Content Include="App_Data\Northwind.mdb" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="VerProductos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnadirRegistros.aspx.designer.vb">
+      <DependentUpon>AnadirRegistros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnadirRegistros.aspx.vb">
+      <DependentUpon>AnadirRegistros.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="IniciarSesion.aspx.designer.vb">
       <DependentUpon>IniciarSesion.aspx</DependentUpon>
     </Compile>
