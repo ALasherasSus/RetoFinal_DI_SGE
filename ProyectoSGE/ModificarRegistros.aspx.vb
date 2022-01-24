@@ -22,7 +22,7 @@ Public Class ModificarRegistros
             Me.GridView1.DataSource = das1.Tables(0)
             Me.GridView1.DataBind()
 
-            'Me.LabelContador.Text = "En la tabla hay " & contador & " registros."
+            TextBoxProductName.Text = das1.Tables(0).Rows(0)(1).ToString
         Catch ex As Exception
             'Me.LabelContador.Text = ex.Message
         End Try
