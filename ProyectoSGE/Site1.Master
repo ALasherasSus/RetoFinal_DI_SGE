@@ -9,22 +9,29 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
+        .auto-style2 {
+            width: 40px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style1">
+            <table class="auto-style1" style="background-color: #99CCFF">
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2" style="font-size: 30px">Proyecto</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="auto-style2">
                         <asp:Menu ID="Menu1" runat="server">
+                            <Items>
+                                <asp:MenuItem Text="Ver Productos/Contar" Value="Ver Productos/Contar"></asp:MenuItem>
+                                <asp:MenuItem Text="Añadir Registros" Value="Añadir Registros"></asp:MenuItem>
+                                <asp:MenuItem Text="Modificar Registros" Value="Modificar Registros"></asp:MenuItem>
+                                <asp:MenuItem Text="Borrar Registros" Value="Borrar Registros"></asp:MenuItem>
+                                <asp:MenuItem Text="Order_IDs" Value="Order_IDs"></asp:MenuItem>
+                            </Items>
                         </asp:Menu>
                     </td>
                     <td>
@@ -33,7 +40,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2">&nbsp;</td>
                     <td>&nbsp;</td>
                 </tr>
             </table>
