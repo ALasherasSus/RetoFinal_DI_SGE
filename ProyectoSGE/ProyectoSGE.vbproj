@@ -95,6 +95,7 @@
     <Content Include="AnadirRegistros.aspx" />
     <Content Include="App_Data\Northwind.mdb" />
     <Content Include="IniciarSesion.aspx" />
+    <Content Include="ModificarRegistros.aspx" />
     <Content Include="VerProductos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -111,6 +112,13 @@
     </Compile>
     <Compile Include="IniciarSesion.aspx.vb">
       <DependentUpon>IniciarSesion.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="ModificarRegistros.aspx.designer.vb">
+      <DependentUpon>ModificarRegistros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarRegistros.aspx.vb">
+      <DependentUpon>ModificarRegistros.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
