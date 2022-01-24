@@ -13,6 +13,10 @@
     <asp:Button ID="ButtonBuscar" runat="server" Text="Buscar" />
     <br />
     <br />
+    <asp:GridView ID="GridView1" runat="server">
+    </asp:GridView>
+    <br />
+    <br />
     <asp:Label ID="LabelProductName" runat="server" Text="ProductName: "></asp:Label>
     <asp:TextBox ID="TextBoxProductName" runat="server"></asp:TextBox>
     <br />
