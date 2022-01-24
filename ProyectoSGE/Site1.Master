@@ -9,21 +9,29 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
-        .auto-style2 {
-            width: 40px;
+        td {
+            background-color: #99CCFF;
+        }
+        td {
+            width: 300px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style1" style="background-color: #99CCFF">
+            <table class="auto-style1" style="border-style: solid; border-color: #FFFFFF; ">
                 <tr>
-                    <td class="auto-style2" style="font-size: 30px">Proyecto</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4" style="font-size: 30px">
+                        <asp:Label ID="LabelTitulo" runat="server" Text="Proyecto"></asp:Label></td>
+                    <td class="auto-style3">
+                        <asp:Label ID="LabelUsuario" runat="server" Text="(Nombre de usuario)"></asp:Label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="LabelIniciar" runat="server" Text="Iniciar sesión"></asp:Label>
+                    </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">
+                    <td class="auto-style4">
                         <asp:Menu ID="Menu1" runat="server">
                             <Items>
                                 <asp:MenuItem Text="Ver Productos/Contar" Value="Ver Productos/Contar"></asp:MenuItem>
@@ -34,14 +42,14 @@
                             </Items>
                         </asp:Menu>
                     </td>
-                    <td>
+                    <td class="auto-style3">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
                         </asp:ContentPlaceHolder>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style2">&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2" colspan="2">
+                        <asp:Label ID="LabelAutor" runat="server" Text="Arkaitz Lasheras"></asp:Label></td>
                 </tr>
             </table>
         </div>
