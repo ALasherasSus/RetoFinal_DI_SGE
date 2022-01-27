@@ -18,7 +18,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style1" style="border-style: solid; border-color: #FFFFFF; ">
+            <table class="auto-style1" style="border-style: solid; border-color: #FFFFFF; >
                 <tr>
                     <td class="auto-style4" style="font-size: 30px">
                         <asp:Label ID="LabelTitulo" runat="server" Text="Proyecto"></asp:Label></td>
@@ -40,7 +40,7 @@
                                 <asp:MenuItem Text="Añadir Registros" Value="Añadir Registros" NavigateUrl="~/AnadirRegistros.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Modificar Registros" Value="Modificar Registros" NavigateUrl="~/ModificarRegistros.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Borrar Registros" Value="Borrar Registros" NavigateUrl="~/BorrarRegistros.aspx"></asp:MenuItem>
-                                <asp:MenuItem Text="Order_IDs" Value="Order_IDs"></asp:MenuItem>
+                                <asp:MenuItem Text="Order_IDs" Value="Order_IDs" NavigateUrl="~/OrderIDs.aspx"></asp:MenuItem>
                             </Items>
                             <StaticHoverStyle BackColor="#666666" ForeColor="White" />
                             <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
