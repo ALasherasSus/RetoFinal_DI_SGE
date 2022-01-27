@@ -97,6 +97,7 @@
     <Content Include="BorrarRegistros.aspx" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="ModificarRegistros.aspx" />
+    <Content Include="OrderIDs.aspx" />
     <Content Include="VerProductos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -147,6 +148,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="OrderIDs.aspx.designer.vb">
+      <DependentUpon>OrderIDs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OrderIDs.aspx.vb">
+      <DependentUpon>OrderIDs.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site1.Master.designer.vb">
       <DependentUpon>Site1.Master</DependentUpon>
