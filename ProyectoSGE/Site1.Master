@@ -18,7 +18,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <table class="auto-style1" style="border-style: solid; border-color: #FFFFFF; >
+            <table class="auto-style1" style="border-style: solid; border-color: #FFFFFF; ">
                 <tr>
                     <td class="auto-style4" style="font-size: 30px">
                         <asp:Label ID="LabelTitulo" runat="server" Text="Proyecto"></asp:Label></td>
