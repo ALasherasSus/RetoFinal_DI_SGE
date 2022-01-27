@@ -39,7 +39,7 @@
                                 <asp:MenuItem Text="Ver Productos/Contar" Value="Ver Productos/Contar" NavigateUrl="~/VerProductos.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Añadir Registros" Value="Añadir Registros" NavigateUrl="~/AnadirRegistros.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Modificar Registros" Value="Modificar Registros" NavigateUrl="~/ModificarRegistros.aspx"></asp:MenuItem>
-                                <asp:MenuItem Text="Borrar Registros" Value="Borrar Registros"></asp:MenuItem>
+                                <asp:MenuItem Text="Borrar Registros" Value="Borrar Registros" NavigateUrl="~/BorrarRegistros.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Order_IDs" Value="Order_IDs"></asp:MenuItem>
                             </Items>
                             <StaticHoverStyle BackColor="#666666" ForeColor="White" />

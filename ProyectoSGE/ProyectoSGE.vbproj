@@ -94,6 +94,7 @@
   <ItemGroup>
     <Content Include="AnadirRegistros.aspx" />
     <Content Include="App_Data\Northwind.mdb" />
+    <Content Include="BorrarRegistros.aspx" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="ModificarRegistros.aspx" />
     <Content Include="VerProductos.aspx" />
@@ -105,6 +106,13 @@
     </Compile>
     <Compile Include="AnadirRegistros.aspx.vb">
       <DependentUpon>AnadirRegistros.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="BorrarRegistros.aspx.designer.vb">
+      <DependentUpon>BorrarRegistros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BorrarRegistros.aspx.vb">
+      <DependentUpon>BorrarRegistros.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="IniciarSesion.aspx.designer.vb">
