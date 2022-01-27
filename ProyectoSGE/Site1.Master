@@ -41,6 +41,7 @@
                                 <asp:MenuItem Text="Modificar Registros" Value="Modificar Registros" NavigateUrl="~/ModificarRegistros.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Borrar Registros" Value="Borrar Registros" NavigateUrl="~/BorrarRegistros.aspx"></asp:MenuItem>
                                 <asp:MenuItem Text="Order_IDs" Value="Order_IDs" NavigateUrl="~/OrderIDs.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Filtrar.aspx" Text="Filtrar" Value="Filtrar"></asp:MenuItem>
                             </Items>
                             <StaticHoverStyle BackColor="#666666" ForeColor="White" />
                             <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
