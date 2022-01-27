@@ -16,7 +16,7 @@
 <asp:GridView ID="GridView1" runat="server">
 </asp:GridView>
 <br />
-<asp:Button ID="ButtonModificar" runat="server" Text="Eliminar un registro" />
+<asp:Button ID="ButtonBorrar" runat="server" Text="Eliminar un registro" />
 <br />
 <br />
 </asp:Content>

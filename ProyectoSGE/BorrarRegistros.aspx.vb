@@ -26,7 +26,7 @@ Public Class BorrarRegistros
         End Try
     End Sub
 
-    Protected Sub ButtonModificar_Click(sender As Object, e As EventArgs) Handles ButtonModificar.Click
+    Protected Sub ButtonBorrar_Click(sender As Object, e As EventArgs) Handles ButtonBorrar.Click
         Dim stringconexion As String =
             ConfigurationManager.ConnectionStrings("ELORRIETA").ConnectionString
         Dim conexion As New OleDbConnection(stringconexion)

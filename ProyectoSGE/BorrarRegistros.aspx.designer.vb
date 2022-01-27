@@ -59,11 +59,11 @@ Partial Public Class BorrarRegistros
     Protected WithEvents GridView1 As Global.System.Web.UI.WebControls.GridView
 
     '''<summary>
-    '''Control ButtonModificar.
+    '''Control ButtonBorrar.
     '''</summary>
     '''<remarks>
     '''Campo generado automáticamente.
     '''Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
     '''</remarks>
-    Protected WithEvents ButtonModificar As Global.System.Web.UI.WebControls.Button
+    Protected WithEvents ButtonBorrar As Global.System.Web.UI.WebControls.Button
 End Class

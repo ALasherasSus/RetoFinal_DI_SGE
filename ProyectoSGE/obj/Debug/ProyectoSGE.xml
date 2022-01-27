@@ -154,9 +154,9 @@ Campo generado automáticamente.
 Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
 </remarks>
 </member>
-<member name="F:ProyectoSGE.BorrarRegistros._ButtonModificar">
+<member name="F:ProyectoSGE.BorrarRegistros._ButtonBorrar">
 <summary>
-Control ButtonModificar.
+Control ButtonBorrar.
 </summary>
 <remarks>
 Campo generado automáticamente.
