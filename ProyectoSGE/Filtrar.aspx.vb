@@ -79,8 +79,8 @@ Public Class Filtrar
     End Sub
 
     Private Sub cargarTextBoxes()
-        TextBoxCity.Text = GridView1.SelectedRow.Cells(3).Text
-        TextBoxCountry.Text = GridView1.SelectedRow.Cells(4).Text
-        TextBoxCompanyName.Text = GridView1.SelectedRow.Cells(2).Text
+        TextBoxCity.Text = HttpUtility.HtmlDecode(GridView1.SelectedRow.Cells(3).Text)
+        TextBoxCountry.Text = HttpUtility.HtmlDecode(GridView1.SelectedRow.Cells(4).Text)
+        TextBoxCompanyName.Text = HttpUtility.HtmlDecode(GridView1.SelectedRow.Cells(2).Text)
     End Sub
 End Class
