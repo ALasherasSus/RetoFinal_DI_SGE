@@ -45,6 +45,7 @@
                                 <asp:MenuItem NavigateUrl="~/EliminarCustomer.aspx" Text="Eliminar Customer" Value="Eliminar Customer"></asp:MenuItem>
                                 <asp:MenuItem NavigateUrl="~/VerAmigos.aspx" Text="Ver Amigos" Value="Ver Amigos"></asp:MenuItem>
                                 <asp:MenuItem NavigateUrl="~/OrderStyle.aspx" Text="Order Style" Value="Order Style"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/PostalCode.aspx" Text="PostalCode" Value="PostalCode"></asp:MenuItem>
                             </Items>
                             <StaticHoverStyle BackColor="#666666" ForeColor="White" />
                             <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />

@@ -109,6 +109,7 @@
     <Content Include="ModificarRegistros.aspx" />
     <Content Include="OrderIDs.aspx" />
     <Content Include="OrderStyle.aspx" />
+    <Content Include="PostalCode.aspx" />
     <Content Include="VerAmigos.aspx" />
     <Content Include="VerProductos.aspx" />
     <Content Include="Web.config" />
@@ -187,6 +188,13 @@
     </Compile>
     <Compile Include="OrderStyle.aspx.vb">
       <DependentUpon>OrderStyle.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="PostalCode.aspx.designer.vb">
+      <DependentUpon>PostalCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PostalCode.aspx.vb">
+      <DependentUpon>PostalCode.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Site1.Master.designer.vb">
