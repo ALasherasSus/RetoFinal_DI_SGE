@@ -95,6 +95,7 @@
     <Import Include="System.Web.UI.HtmlControls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AmigosDetalles.aspx" />
     <Content Include="AnadirRegistros.aspx" />
     <Content Include="App_Data\Amigos.mdb" />
     <Content Include="App_Data\Northwind.mdb" />
@@ -116,6 +117,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AmigosDetalles.aspx.designer.vb">
+      <DependentUpon>AmigosDetalles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AmigosDetalles.aspx.vb">
+      <DependentUpon>AmigosDetalles.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
     <Compile Include="AnadirRegistros.aspx.designer.vb">
       <DependentUpon>AnadirRegistros.aspx</DependentUpon>
     </Compile>
