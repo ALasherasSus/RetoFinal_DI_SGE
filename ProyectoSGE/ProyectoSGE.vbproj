@@ -96,13 +96,19 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AnadirRegistros.aspx" />
+    <Content Include="App_Data\Amigos.mdb" />
     <Content Include="App_Data\Northwind.mdb" />
     <Content Include="BorrarRegistros.aspx" />
     <Content Include="EliminarCustomer.aspx" />
     <Content Include="Filtrar.aspx" />
+    <Content Include="Images\Foto1.jpg" />
+    <Content Include="Images\Foto2.jpg" />
+    <Content Include="Images\Foto3.jpg" />
+    <Content Include="Images\Foto4.jpg" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="ModificarRegistros.aspx" />
     <Content Include="OrderIDs.aspx" />
+    <Content Include="VerAmigos.aspx" />
     <Content Include="VerProductos.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -181,6 +187,13 @@
     <Compile Include="Site1.Master.vb">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VerAmigos.aspx.designer.vb">
+      <DependentUpon>VerAmigos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VerAmigos.aspx.vb">
+      <DependentUpon>VerAmigos.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="VerProductos.aspx.designer.vb">
       <DependentUpon>VerProductos.aspx</DependentUpon>
