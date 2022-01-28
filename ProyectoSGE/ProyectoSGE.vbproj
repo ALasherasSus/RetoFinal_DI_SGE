@@ -46,6 +46,9 @@
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=20.1.0.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <HintPath>packages\AjaxControlToolkit.20.1.0\lib\net40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -95,6 +98,7 @@
     <Content Include="AnadirRegistros.aspx" />
     <Content Include="App_Data\Northwind.mdb" />
     <Content Include="BorrarRegistros.aspx" />
+    <Content Include="EliminarCustomer.aspx" />
     <Content Include="Filtrar.aspx" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="ModificarRegistros.aspx" />
@@ -115,6 +119,13 @@
     </Compile>
     <Compile Include="BorrarRegistros.aspx.vb">
       <DependentUpon>BorrarRegistros.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="EliminarCustomer.aspx.designer.vb">
+      <DependentUpon>EliminarCustomer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCustomer.aspx.vb">
+      <DependentUpon>EliminarCustomer.aspx</DependentUpon>
       <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="Filtrar.aspx.designer.vb">
@@ -169,6 +180,7 @@
     </Compile>
     <Compile Include="Site1.Master.vb">
       <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="VerProductos.aspx.designer.vb">
       <DependentUpon>VerProductos.aspx</DependentUpon>
