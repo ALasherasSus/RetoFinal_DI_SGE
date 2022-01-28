@@ -107,6 +107,7 @@
     <Content Include="Images\Foto4.jpg" />
     <Content Include="IniciarSesion.aspx" />
     <Content Include="ModificarRegistros.aspx" />
+    <Content Include="Order Total.aspx" />
     <Content Include="OrderIDs.aspx" />
     <Content Include="OrderStyle.aspx" />
     <Content Include="PostalCode.aspx" />
@@ -175,6 +176,13 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Order Total.aspx.designer.vb">
+      <DependentUpon>Order Total.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Order Total.aspx.vb">
+      <DependentUpon>Order Total.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
     </Compile>
     <Compile Include="OrderIDs.aspx.designer.vb">
       <DependentUpon>OrderIDs.aspx</DependentUpon>
