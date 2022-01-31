@@ -52,20 +52,72 @@ namespace ProyectoDI
 
         private void insertarSin_Click(object sender, EventArgs e)
         {
-            sql = "INSERT INTO [Peliculas] WHERE CodGenero = " + tbCodGenero.Text;
-            SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
-            Conexion.AbrirConexion();
-            labelResultadoContar.Text = cmd.ExecuteScalar().ToString();
-            Conexion.CerrarConexion();
+            try
+            {
+                int pelicula = maximoPeliculas();
+                sql = "INSERT INTO [Peliculas] (CodPelicula, Titulo, Duración, CodGenero, Año, Productora, Pais, Precio, Director) VALUES (" + pelicula + ", '" + tbTitulo.Text + "', " + tbDuracion.Text + ", " + (comboBox1.SelectedIndex + 1) + ", " + tbAno.Text + ", '" + tbProductora.Text + "', '" + tbPais.Text + "', " + tbPrecio.Text + ", '" + tbDirector.Text + "');";
+                SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+                Conexion.AbrirConexion();
+                cmd.ExecuteNonQuery();
+                Conexion.CerrarConexion();
+                labelResultadoInsertar.Text = "Éxito";
+            }
+            catch (Exception)
+            {
+                labelResultadoInsertar.Text = "Fallido";
+            }
+        }
+
+        private void insertarCon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int pelicula = maximoPeliculas();
+                sql = "INSERT INTO [Peliculas] (CodPelicula, Titulo, Duración, CodGenero, Año, Productora, Pais, Precio, Director) VALUES (@codPelicula, @titulo, @duracion, @codGenero, @ano, @productora, @pais, @precio, @director);";
+                SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+                cmd.Parameters.Add("@codPelicula", SqlDbType.Int).Value = pelicula;
+                cmd.Parameters.Add("@titulo", SqlDbType.NVarChar).Value = tbTitulo.Text;
+                cmd.Parameters.Add("@duracion", SqlDbType.Int).Value = tbDuracion.Text;
+                cmd.Parameters.Add("@codGenero", SqlDbType.Int).Value = (comboBox1.SelectedIndex + 1);
+                cmd.Parameters.Add("@ano", SqlDbType.Int).Value = tbAno.Text;
+                cmd.Parameters.Add("@productora", SqlDbType.NVarChar).Value = tbProductora.Text;
+                cmd.Parameters.Add("@pais", SqlDbType.NVarChar).Value = tbPais.Text;
+                cmd.Parameters.Add("@precio", SqlDbType.Float).Value = tbPrecio.Text;
+                cmd.Parameters.Add("@director", SqlDbType.NVarChar).Value = tbDirector.Text;
+                Conexion.AbrirConexion();
+                cmd.ExecuteNonQuery();
+                Conexion.CerrarConexion();
+                labelResultadoInsertar.Text = "Éxito";
+            }
+            catch (Exception)
+            {
+                labelResultadoInsertar.Text = "Fallido";
+            }
         }
 
         private void llenarComboGeneros()
         {
-            sql = "SELECT NomGenero FROM [Generos]";
+            sql = "SELECT DISTINCT NomGenero FROM [Generos]";
             SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
             Conexion.AbrirConexion();
-            labelResultadoContar.Text = cmd.ExecuteScalar().ToString();
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                comboBox1.Items.Add(dr[0].ToString());
+                cont++;
+            }
             Conexion.CerrarConexion();
+        }
+
+        private int maximoPeliculas()
+        {
+            int pelicula = 0;
+            sql = "SELECT MAX(CodPelicula) FROM [Peliculas]";
+            SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+            pelicula = Convert.ToInt32(cmd.ExecuteScalar().ToString()) + 1;
+            Conexion.CerrarConexion();
+            return pelicula;
         }
     }
 }

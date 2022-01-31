@@ -209,6 +209,7 @@ namespace ProyectoDI
             this.insertarCon.TabIndex = 11;
             this.insertarCon.Text = "Insertar";
             this.insertarCon.UseVisualStyleBackColor = false;
+            this.insertarCon.Click += new System.EventHandler(this.insertarCon_Click);
             // 
             // insertarSin
             // 
