@@ -10,17 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoDI
 {
-    public partial class Form1 : Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        //private string sql;
-        //private int cont;
-        //private MiConexion Conexion = new MiConexion();
-        //SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
-        //Conexion.AbrirConexion();
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Padre.f1.Activate();
+        }
     }
 }
