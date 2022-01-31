@@ -4,7 +4,7 @@ Public Class Login
     Inherits System.Web.UI.Page
 
     Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
-        'Master.FindControl("Menu1").Visible = False
+        Master.FindControl("Menu1").Visible = False
     End Sub
 
     Protected Sub Login1_Authenticate(sender As Object, e As AuthenticateEventArgs) Handles Login1.Authenticate
