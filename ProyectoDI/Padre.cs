@@ -35,13 +35,18 @@ namespace ProyectoDI
             f1.Activate();
         }
 
-        private void form2ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Dispose();
+        }
+
+        private void página1ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             f2.Show();
             f2.Activate();
         }
 
-        private void form3ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void página2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             f3.Show();
             f3.Activate();

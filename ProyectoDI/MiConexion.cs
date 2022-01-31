@@ -10,7 +10,7 @@ namespace ProyectoDI
 {
     public class MiConexion
     {
-        private SqlConnection Conexion = new SqlConnection("Server=LOCALHOST;DataBase= Northwind;Integrated Security=true");
+        private SqlConnection Conexion = new SqlConnection("Server=LOCALHOST\\MSSQLSERVER1;DataBase= Empresa;Integrated Security=true");
         public SqlConnection pConexion
         {
             get

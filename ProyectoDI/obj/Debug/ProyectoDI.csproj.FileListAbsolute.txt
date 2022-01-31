@@ -1,0 +1,13 @@
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\bin\Debug\ProyectoDI.exe.config
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\bin\Debug\ProyectoDI.exe
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\bin\Debug\ProyectoDI.pdb
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.Form1.resources
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.Form2.resources
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.Form3.resources
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.Padre.resources
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.Properties.Resources.resources
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.csproj.GenerateResource.cache
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.exe
+C:\Users\Admin\Desktop\RetoFinal_DI_SGE\ProyectoDI\obj\Debug\ProyectoDI.pdb

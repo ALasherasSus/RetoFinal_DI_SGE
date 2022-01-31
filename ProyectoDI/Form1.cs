@@ -17,6 +17,12 @@ namespace ProyectoDI
             InitializeComponent();
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+
+        }
+
         //private string sql;
         //private int cont;
         //private MiConexion Conexion = new MiConexion();

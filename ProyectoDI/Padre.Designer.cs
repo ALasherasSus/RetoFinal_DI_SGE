@@ -31,8 +31,14 @@ namespace ProyectoDI
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.formulariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.form2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.form3ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.abrirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.página1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.página2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasNoConectadoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.relacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.realizarInformesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.milista = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -51,27 +57,70 @@ namespace ProyectoDI
             // formulariosToolStripMenuItem
             // 
             this.formulariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.form2ToolStripMenuItem,
-            this.form3ToolStripMenuItem});
+            this.abrirToolStripMenuItem,
+            this.salirToolStripMenuItem});
             this.formulariosToolStripMenuItem.Name = "formulariosToolStripMenuItem";
-            this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
-            this.formulariosToolStripMenuItem.Text = "Formularios";
+            this.formulariosToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.formulariosToolStripMenuItem.Text = "Archivo";
             // 
-            // form2ToolStripMenuItem
+            // abrirToolStripMenuItem
             // 
-            this.form2ToolStripMenuItem.Name = "form2ToolStripMenuItem";
-            this.form2ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F2;
-            this.form2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.form2ToolStripMenuItem.Text = "Form2";
-            this.form2ToolStripMenuItem.Click += new System.EventHandler(this.form2ToolStripMenuItem_Click);
+            this.abrirToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem,
+            this.consultasNoConectadoToolStripMenuItem,
+            this.relacionesToolStripMenuItem,
+            this.realizarInformesToolStripMenuItem});
+            this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem.Text = "Abrir";
             // 
-            // form3ToolStripMenuItem
+            // consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem
             // 
-            this.form3ToolStripMenuItem.Name = "form3ToolStripMenuItem";
-            this.form3ToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.F3;
-            this.form3ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.form3ToolStripMenuItem.Text = "Form3";
-            this.form3ToolStripMenuItem.Click += new System.EventHandler(this.form3ToolStripMenuItem_Click);
+            this.consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.página1ToolStripMenuItem,
+            this.página2ToolStripMenuItem});
+            this.consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem.Name = "consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem";
+            this.consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem.Size = new System.Drawing.Size(334, 22);
+            this.consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem.Text = "Consultas conectado. Utilizando la tabla Películas";
+            // 
+            // página1ToolStripMenuItem
+            // 
+            this.página1ToolStripMenuItem.Name = "página1ToolStripMenuItem";
+            this.página1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.página1ToolStripMenuItem.Text = "Página 1";
+            this.página1ToolStripMenuItem.Click += new System.EventHandler(this.página1ToolStripMenuItem_Click);
+            // 
+            // página2ToolStripMenuItem
+            // 
+            this.página2ToolStripMenuItem.Name = "página2ToolStripMenuItem";
+            this.página2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.página2ToolStripMenuItem.Text = "Página 2";
+            this.página2ToolStripMenuItem.Click += new System.EventHandler(this.página2ToolStripMenuItem_Click);
+            // 
+            // consultasNoConectadoToolStripMenuItem
+            // 
+            this.consultasNoConectadoToolStripMenuItem.Name = "consultasNoConectadoToolStripMenuItem";
+            this.consultasNoConectadoToolStripMenuItem.Size = new System.Drawing.Size(334, 22);
+            this.consultasNoConectadoToolStripMenuItem.Text = "Consultas no conectado";
+            // 
+            // relacionesToolStripMenuItem
+            // 
+            this.relacionesToolStripMenuItem.Name = "relacionesToolStripMenuItem";
+            this.relacionesToolStripMenuItem.Size = new System.Drawing.Size(334, 22);
+            this.relacionesToolStripMenuItem.Text = "Relaciones";
+            // 
+            // realizarInformesToolStripMenuItem
+            // 
+            this.realizarInformesToolStripMenuItem.Name = "realizarInformesToolStripMenuItem";
+            this.realizarInformesToolStripMenuItem.Size = new System.Drawing.Size(334, 22);
+            this.realizarInformesToolStripMenuItem.Text = "Realizar informes";
+            // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
             // milista
             // 
@@ -87,7 +136,7 @@ namespace ProyectoDI
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Padre";
-            this.Text = "Form1";
+            this.Text = "ProyectoDI";
             this.Load += new System.EventHandler(this.Padre_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -100,8 +149,14 @@ namespace ProyectoDI
 
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem formulariosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem form2ToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem form3ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem abrirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasNoConectadoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem relacionesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem realizarInformesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem página1ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem página2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem milista;
     }
 }
