@@ -14,7 +14,6 @@ namespace ProyectoDI
     public partial class Form2 : Form
     {
         private string sql;
-        private int cont;
         private MiConexion Conexion = new MiConexion();
         public Form2()
         {
@@ -215,6 +214,67 @@ namespace ProyectoDI
             Conexion.AbrirConexion();
             tbDirector2.Text = cmd.ExecuteScalar().ToString();
             Conexion.CerrarConexion();
+        }
+
+        private void modificarSin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sql = "SELECT CodPelicula FROM [Peliculas] WHERE Titulo = '" + comboBox3.Items[comboBox3.SelectedIndex].ToString() + "'";
+                SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+                cmd.Parameters.Add("@pelicula", SqlDbType.Int).Value = tbCodPelicula.Text;
+                Conexion.AbrirConexion();
+                String codigo = Convert.ToInt32(cmd.ExecuteScalar()).ToString();
+                Conexion.CerrarConexion();
+
+                int pelicula = maximoPeliculas();
+                sql = "UPDATE [Peliculas] SET Titulo = '" + tbTitulo2.Text + "', Duración = " + tbDuracion2.Text + ", CodGenero = " + (comboBox2.SelectedIndex + 1) + ", Año = " + tbAno2.Text + ", Productora = '" + tbProductora2.Text + "', Pais = '" + tbPais2.Text + "', Precio = " + tbPrecio2.Text + ", Director = '" + tbDirector2.Text + "' WHERE CodPelicula = " + codigo + ";";
+                cmd = new SqlCommand(sql, Conexion.pConexion);
+                Conexion.AbrirConexion();
+                cmd.ExecuteNonQuery();
+                Conexion.CerrarConexion();
+                labelResultadoModificar.Text = "Éxito";
+            }
+            catch (Exception E)
+            {
+                MessageBox.Show(E.StackTrace);
+                labelResultadoModificar.Text = "Fallido";
+            }
+        }
+
+        private void modificarCon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sql = "SELECT CodPelicula FROM [Peliculas] WHERE Titulo = @pelicula";
+                SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+                cmd.Parameters.Add("@pelicula", SqlDbType.NVarChar).Value = comboBox3.Items[comboBox3.SelectedIndex].ToString();
+                Conexion.AbrirConexion();
+                String codigo = Convert.ToInt32(cmd.ExecuteScalar()).ToString();
+                Conexion.CerrarConexion();
+
+                int pelicula = maximoPeliculas();
+                sql = "UPDATE [Peliculas] SET Titulo = @titulo, Duración = @duracion, CodGenero = @codGenero, Año = @ano, Productora = @productora, Pais = @pais, Precio = @precio, Director = @director WHERE CodPelicula = @codPelicula;";
+                cmd = new SqlCommand(sql, Conexion.pConexion);
+                cmd.Parameters.Add("@codPelicula", SqlDbType.Int).Value = codigo;
+                cmd.Parameters.Add("@titulo", SqlDbType.NVarChar).Value = tbTitulo2.Text;
+                cmd.Parameters.Add("@duracion", SqlDbType.Int).Value = tbDuracion2.Text;
+                cmd.Parameters.Add("@codGenero", SqlDbType.Int).Value = (comboBox2.SelectedIndex + 1);
+                cmd.Parameters.Add("@ano", SqlDbType.Int).Value = tbAno2.Text;
+                cmd.Parameters.Add("@productora", SqlDbType.NVarChar).Value = tbProductora2.Text;
+                cmd.Parameters.Add("@pais", SqlDbType.NVarChar).Value = tbPais2.Text;
+                cmd.Parameters.Add("@precio", SqlDbType.Float).Value = tbPrecio2.Text;
+                cmd.Parameters.Add("@director", SqlDbType.NVarChar).Value = tbDirector2.Text;
+                Conexion.AbrirConexion();
+                cmd.ExecuteNonQuery();
+                Conexion.CerrarConexion();
+                labelResultadoModificar.Text = "Éxito";
+            }
+            catch (Exception E)
+            {
+                MessageBox.Show(E.StackTrace);
+                labelResultadoModificar.Text = "Fallido";
+            }
         }
     }
 }

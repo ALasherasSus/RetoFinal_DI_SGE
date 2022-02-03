@@ -83,7 +83,7 @@ namespace ProyectoDI
             this.label25 = new System.Windows.Forms.Label();
             this.tbTitulo2 = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
+            this.labelResultadoModificar = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.modificarCon = new System.Windows.Forms.Button();
             this.modificarSin = new System.Windows.Forms.Button();
@@ -634,16 +634,16 @@ namespace ProyectoDI
             this.label26.TabIndex = 42;
             this.label26.Text = "Título";
             // 
-            // label27
+            // labelResultadoModificar
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.Lime;
-            this.label27.Location = new System.Drawing.Point(562, 321);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(67, 25);
-            this.label27.TabIndex = 41;
-            this.label27.Text = "_____";
+            this.labelResultadoModificar.AutoSize = true;
+            this.labelResultadoModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResultadoModificar.ForeColor = System.Drawing.Color.Lime;
+            this.labelResultadoModificar.Location = new System.Drawing.Point(562, 321);
+            this.labelResultadoModificar.Name = "labelResultadoModificar";
+            this.labelResultadoModificar.Size = new System.Drawing.Size(67, 25);
+            this.labelResultadoModificar.TabIndex = 41;
+            this.labelResultadoModificar.Text = "_____";
             // 
             // label28
             // 
@@ -667,6 +667,7 @@ namespace ProyectoDI
             this.modificarCon.TabIndex = 39;
             this.modificarCon.Text = "Modificar";
             this.modificarCon.UseVisualStyleBackColor = false;
+            this.modificarCon.Click += new System.EventHandler(this.modificarCon_Click);
             // 
             // modificarSin
             // 
@@ -679,6 +680,7 @@ namespace ProyectoDI
             this.modificarSin.TabIndex = 38;
             this.modificarSin.Text = "Modificar";
             this.modificarSin.UseVisualStyleBackColor = false;
+            this.modificarSin.Click += new System.EventHandler(this.modificarSin_Click);
             // 
             // label29
             // 
@@ -737,7 +739,7 @@ namespace ProyectoDI
             this.Controls.Add(this.label25);
             this.Controls.Add(this.tbTitulo2);
             this.Controls.Add(this.label26);
-            this.Controls.Add(this.label27);
+            this.Controls.Add(this.labelResultadoModificar);
             this.Controls.Add(this.label28);
             this.Controls.Add(this.modificarCon);
             this.Controls.Add(this.modificarSin);
@@ -843,7 +845,7 @@ namespace ProyectoDI
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.TextBox tbTitulo2;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label labelResultadoModificar;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button modificarCon;
         private System.Windows.Forms.Button modificarSin;
