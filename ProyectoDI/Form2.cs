@@ -119,5 +119,40 @@ namespace ProyectoDI
             Conexion.CerrarConexion();
             return pelicula;
         }
+
+        private void borrarSin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sql = "DELETE FROM [Peliculas] WHERE CodPelicula = " + tbCodPelicula.Text;
+                SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+                Conexion.AbrirConexion();
+                cmd.ExecuteNonQuery();
+                Conexion.CerrarConexion();
+                labelResultadoBorrar.Text = "Éxito";
+            }
+            catch (Exception)
+            {
+                labelResultadoBorrar.Text = "Fallido";
+            }
+        }
+
+        private void borrarCon_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sql = "DELETE FROM [Peliculas] WHERE CodPelicula = @pelicula";
+                SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+                cmd.Parameters.Add("@pelicula", SqlDbType.Int).Value = tbCodPelicula.Text;
+                Conexion.AbrirConexion();
+                cmd.ExecuteNonQuery();
+                Conexion.CerrarConexion();
+                labelResultadoBorrar.Text = "Éxito";
+            }
+            catch (Exception)
+            {
+                labelResultadoBorrar.Text = "Fallido";
+            }
+        }
     }
 }

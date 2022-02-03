@@ -60,6 +60,13 @@ namespace ProyectoDI
             this.label14 = new System.Windows.Forms.Label();
             this.tbDirector = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.labelResultadoBorrar = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
+            this.tbCodPelicula = new System.Windows.Forms.TextBox();
+            this.borrarCon = new System.Windows.Forms.Button();
+            this.borrarSin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -380,6 +387,85 @@ namespace ProyectoDI
             this.label15.TabIndex = 29;
             this.label15.Text = "Director";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.Color.Lime;
+            this.label16.Location = new System.Drawing.Point(9, 210);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(781, 13);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "_________________________________________________________________________________" +
+    "________________________________________________";
+            // 
+            // labelResultadoBorrar
+            // 
+            this.labelResultadoBorrar.AutoSize = true;
+            this.labelResultadoBorrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelResultadoBorrar.ForeColor = System.Drawing.Color.Lime;
+            this.labelResultadoBorrar.Location = new System.Drawing.Point(555, 251);
+            this.labelResultadoBorrar.Name = "labelResultadoBorrar";
+            this.labelResultadoBorrar.Size = new System.Drawing.Size(111, 25);
+            this.labelResultadoBorrar.TabIndex = 37;
+            this.labelResultadoBorrar.Text = "_________";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.ForeColor = System.Drawing.Color.Lime;
+            this.label18.Location = new System.Drawing.Point(444, 251);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(105, 25);
+            this.label18.TabIndex = 36;
+            this.label18.Text = "Resultado:";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.ForeColor = System.Drawing.Color.Lime;
+            this.label19.Location = new System.Drawing.Point(336, 228);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(93, 17);
+            this.label19.TabIndex = 35;
+            this.label19.Text = "CodPelicula";
+            // 
+            // tbCodPelicula
+            // 
+            this.tbCodPelicula.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCodPelicula.Location = new System.Drawing.Point(324, 248);
+            this.tbCodPelicula.Name = "tbCodPelicula";
+            this.tbCodPelicula.Size = new System.Drawing.Size(114, 30);
+            this.tbCodPelicula.TabIndex = 34;
+            this.tbCodPelicula.Text = "0";
+            // 
+            // borrarCon
+            // 
+            this.borrarCon.BackColor = System.Drawing.Color.Lime;
+            this.borrarCon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.borrarCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.borrarCon.Location = new System.Drawing.Point(164, 247);
+            this.borrarCon.Name = "borrarCon";
+            this.borrarCon.Size = new System.Drawing.Size(154, 33);
+            this.borrarCon.TabIndex = 33;
+            this.borrarCon.Text = "Borrar";
+            this.borrarCon.UseVisualStyleBackColor = false;
+            this.borrarCon.Click += new System.EventHandler(this.borrarCon_Click);
+            // 
+            // borrarSin
+            // 
+            this.borrarSin.BackColor = System.Drawing.Color.Lime;
+            this.borrarSin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.borrarSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.borrarSin.Location = new System.Drawing.Point(12, 247);
+            this.borrarSin.Name = "borrarSin";
+            this.borrarSin.Size = new System.Drawing.Size(146, 33);
+            this.borrarSin.TabIndex = 32;
+            this.borrarSin.Text = "Borrar";
+            this.borrarSin.UseVisualStyleBackColor = false;
+            this.borrarSin.Click += new System.EventHandler(this.borrarSin_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -387,6 +473,13 @@ namespace ProyectoDI
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.labelResultadoBorrar);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.tbCodPelicula);
+            this.Controls.Add(this.borrarCon);
+            this.Controls.Add(this.borrarSin);
+            this.Controls.Add(this.label16);
             this.Controls.Add(this.tbDirector);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.tbPrecio);
@@ -459,5 +552,12 @@ namespace ProyectoDI
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox tbDirector;
         private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label labelResultadoBorrar;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.TextBox tbCodPelicula;
+        private System.Windows.Forms.Button borrarCon;
+        private System.Windows.Forms.Button borrarSin;
     }
 }
