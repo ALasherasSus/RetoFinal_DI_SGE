@@ -14,6 +14,7 @@ namespace ProyectoDI
     public partial class Form3 : Form
     {
         private string sql;
+        private int cont;
         private MiConexion Conexion = new MiConexion();
         public Form3()
         {
@@ -78,6 +79,72 @@ namespace ProyectoDI
             catch (Exception ex)
             {
                 MessageBox.Show("Error: " + ex.ToString());
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //METADATOS
+            sql = "Select * from facturas";
+            SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+            string acum = null;
+            SqlDataReader dr;
+            try
+            {
+                Conexion.AbrirConexion();
+                dr = cmd.ExecuteReader();
+                for (int x = 0; x <= dr.FieldCount - 1; x++)
+                {
+                    acum += dr.GetName(x) + " - " + dr.GetFieldType(x) + Environment.NewLine;
+                }
+                acum += new string('-', 30);  // en c# no existe strdup
+                MessageBox.Show(acum);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                Conexion.CerrarConexion();
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            string acum = null;
+            sql = "Select NombCli from clientes";
+            SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+            SqlDataReader dr;
+            cont = 0;
+            try
+            {
+                Conexion.AbrirConexion();
+                dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    cont += 1;
+                    acum += cont + "- " + dr.GetString(0) + Environment.NewLine;
+                    if ((cont % 25) == 0)
+                    {
+                        MessageBox.Show(acum);
+                        acum = null;
+                    }
+                }
+                if (acum != null)
+                {
+                    MessageBox.Show(acum);
+                }
+                dr.Close();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                Conexion.CerrarConexion();
             }
         }
     }
