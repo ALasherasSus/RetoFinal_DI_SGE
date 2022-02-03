@@ -67,13 +67,36 @@ namespace ProyectoDI
             this.tbCodPelicula = new System.Windows.Forms.TextBox();
             this.borrarCon = new System.Windows.Forms.Button();
             this.borrarSin = new System.Windows.Forms.Button();
+            this.tbDirector2 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.tbPrecio2 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tbPais2 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.tbProductora2 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.tbAno2 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.tbDuracion2 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.tbTitulo2 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.modificarCon = new System.Windows.Forms.Button();
+            this.modificarSin = new System.Windows.Forms.Button();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Lime;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(12, 415);
+            this.button1.Location = new System.Drawing.Point(617, 9);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 23);
             this.button1.TabIndex = 0;
@@ -466,13 +489,258 @@ namespace ProyectoDI
             this.borrarSin.UseVisualStyleBackColor = false;
             this.borrarSin.Click += new System.EventHandler(this.borrarSin_Click);
             // 
+            // tbDirector2
+            // 
+            this.tbDirector2.Location = new System.Drawing.Point(648, 382);
+            this.tbDirector2.Name = "tbDirector2";
+            this.tbDirector2.Size = new System.Drawing.Size(100, 20);
+            this.tbDirector2.TabIndex = 57;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Lime;
+            this.label17.Location = new System.Drawing.Point(665, 362);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(66, 17);
+            this.label17.TabIndex = 56;
+            this.label17.Text = "Director";
+            // 
+            // tbPrecio2
+            // 
+            this.tbPrecio2.Location = new System.Drawing.Point(542, 382);
+            this.tbPrecio2.Name = "tbPrecio2";
+            this.tbPrecio2.Size = new System.Drawing.Size(100, 20);
+            this.tbPrecio2.TabIndex = 55;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.ForeColor = System.Drawing.Color.Lime;
+            this.label20.Location = new System.Drawing.Point(565, 362);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(54, 17);
+            this.label20.TabIndex = 54;
+            this.label20.Text = "Precio";
+            // 
+            // tbPais2
+            // 
+            this.tbPais2.Location = new System.Drawing.Point(436, 382);
+            this.tbPais2.Name = "tbPais2";
+            this.tbPais2.Size = new System.Drawing.Size(100, 20);
+            this.tbPais2.TabIndex = 53;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Lime;
+            this.label21.Location = new System.Drawing.Point(467, 362);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(39, 17);
+            this.label21.TabIndex = 52;
+            this.label21.Text = "País";
+            // 
+            // tbProductora2
+            // 
+            this.tbProductora2.Location = new System.Drawing.Point(330, 382);
+            this.tbProductora2.Name = "tbProductora2";
+            this.tbProductora2.Size = new System.Drawing.Size(100, 20);
+            this.tbProductora2.TabIndex = 51;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.Lime;
+            this.label22.Location = new System.Drawing.Point(336, 362);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(88, 17);
+            this.label22.TabIndex = 50;
+            this.label22.Text = "Productora";
+            // 
+            // tbAno2
+            // 
+            this.tbAno2.Location = new System.Drawing.Point(224, 382);
+            this.tbAno2.Name = "tbAno2";
+            this.tbAno2.Size = new System.Drawing.Size(100, 20);
+            this.tbAno2.TabIndex = 49;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.Lime;
+            this.label23.Location = new System.Drawing.Point(256, 362);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(36, 17);
+            this.label23.TabIndex = 48;
+            this.label23.Text = "Año";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.Lime;
+            this.label24.Location = new System.Drawing.Point(696, 309);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(62, 17);
+            this.label24.TabIndex = 47;
+            this.label24.Text = "Género";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Location = new System.Drawing.Point(667, 329);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(121, 21);
+            this.comboBox2.TabIndex = 46;
+            // 
+            // tbDuracion2
+            // 
+            this.tbDuracion2.Location = new System.Drawing.Point(118, 382);
+            this.tbDuracion2.Name = "tbDuracion2";
+            this.tbDuracion2.Size = new System.Drawing.Size(100, 20);
+            this.tbDuracion2.TabIndex = 45;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.Lime;
+            this.label25.Location = new System.Drawing.Point(132, 362);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(73, 17);
+            this.label25.TabIndex = 44;
+            this.label25.Text = "Duración";
+            // 
+            // tbTitulo2
+            // 
+            this.tbTitulo2.Location = new System.Drawing.Point(12, 382);
+            this.tbTitulo2.Name = "tbTitulo2";
+            this.tbTitulo2.Size = new System.Drawing.Size(100, 20);
+            this.tbTitulo2.TabIndex = 43;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.Lime;
+            this.label26.Location = new System.Drawing.Point(38, 362);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(49, 17);
+            this.label26.TabIndex = 42;
+            this.label26.Text = "Título";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.Lime;
+            this.label27.Location = new System.Drawing.Point(562, 321);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(67, 25);
+            this.label27.TabIndex = 41;
+            this.label27.Text = "_____";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.Lime;
+            this.label28.Location = new System.Drawing.Point(451, 321);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(105, 25);
+            this.label28.TabIndex = 40;
+            this.label28.Text = "Resultado:";
+            // 
+            // modificarCon
+            // 
+            this.modificarCon.BackColor = System.Drawing.Color.Lime;
+            this.modificarCon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modificarCon.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modificarCon.Location = new System.Drawing.Point(164, 319);
+            this.modificarCon.Name = "modificarCon";
+            this.modificarCon.Size = new System.Drawing.Size(154, 33);
+            this.modificarCon.TabIndex = 39;
+            this.modificarCon.Text = "Modificar";
+            this.modificarCon.UseVisualStyleBackColor = false;
+            // 
+            // modificarSin
+            // 
+            this.modificarSin.BackColor = System.Drawing.Color.Lime;
+            this.modificarSin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.modificarSin.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.modificarSin.Location = new System.Drawing.Point(12, 319);
+            this.modificarSin.Name = "modificarSin";
+            this.modificarSin.Size = new System.Drawing.Size(146, 33);
+            this.modificarSin.TabIndex = 38;
+            this.modificarSin.Text = "Modificar";
+            this.modificarSin.UseVisualStyleBackColor = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.ForeColor = System.Drawing.Color.Lime;
+            this.label29.Location = new System.Drawing.Point(12, 292);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(781, 13);
+            this.label29.TabIndex = 58;
+            this.label29.Text = "_________________________________________________________________________________" +
+    "________________________________________________";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.Lime;
+            this.label30.Location = new System.Drawing.Point(331, 309);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(106, 17);
+            this.label30.TabIndex = 60;
+            this.label30.Text = "Elige Pelicula";
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(324, 329);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(121, 21);
+            this.comboBox3.TabIndex = 59;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 561);
             this.ControlBox = false;
+            this.Controls.Add(this.label30);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label29);
+            this.Controls.Add(this.tbDirector2);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.tbPrecio2);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.tbPais2);
+            this.Controls.Add(this.label21);
+            this.Controls.Add(this.tbProductora2);
+            this.Controls.Add(this.label22);
+            this.Controls.Add(this.tbAno2);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.tbDuracion2);
+            this.Controls.Add(this.label25);
+            this.Controls.Add(this.tbTitulo2);
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.label27);
+            this.Controls.Add(this.label28);
+            this.Controls.Add(this.modificarCon);
+            this.Controls.Add(this.modificarSin);
             this.Controls.Add(this.labelResultadoBorrar);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label19);
@@ -559,5 +827,28 @@ namespace ProyectoDI
         private System.Windows.Forms.TextBox tbCodPelicula;
         private System.Windows.Forms.Button borrarCon;
         private System.Windows.Forms.Button borrarSin;
+        private System.Windows.Forms.TextBox tbDirector2;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.TextBox tbPrecio2;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.TextBox tbPais2;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox tbProductora2;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox tbAno2;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.TextBox tbDuracion2;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox tbTitulo2;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Button modificarCon;
+        private System.Windows.Forms.Button modificarSin;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.ComboBox comboBox3;
     }
 }

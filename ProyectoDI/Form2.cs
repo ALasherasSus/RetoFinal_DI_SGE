@@ -24,6 +24,7 @@ namespace ProyectoDI
         private void Form2_Load(object sender, EventArgs e)
         {
             llenarComboGeneros();
+            llenarComboPeliculas();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -104,7 +105,20 @@ namespace ProyectoDI
             while (dr.Read())
             {
                 comboBox1.Items.Add(dr[0].ToString());
-                cont++;
+                comboBox2.Items.Add(dr[0].ToString());
+            }
+            Conexion.CerrarConexion();
+        }
+
+        private void llenarComboPeliculas()
+        {
+            sql = "SELECT DISTINCT Titulo FROM [Peliculas]";
+            SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                comboBox3.Items.Add(dr[0].ToString());
             }
             Conexion.CerrarConexion();
         }
@@ -153,6 +167,54 @@ namespace ProyectoDI
             {
                 labelResultadoBorrar.Text = "Fallido";
             }
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            sql = "SELECT CodGenero FROM [Peliculas] WHERE Titulo = '" + comboBox3.Items[comboBox3.SelectedIndex].ToString() + "'";
+            SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+            int genero = Convert.ToInt32(cmd.ExecuteScalar());
+            comboBox2.SelectedIndex = genero - 1;
+            Conexion.CerrarConexion();
+
+            tbTitulo2.Text = comboBox3.Items[comboBox3.SelectedIndex].ToString();
+
+            sql = "SELECT Duración FROM [Peliculas] WHERE Titulo = '" + comboBox3.Items[comboBox3.SelectedIndex].ToString() + "'";
+            cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+            tbDuracion2.Text = Convert.ToInt32(cmd.ExecuteScalar()).ToString();
+            Conexion.CerrarConexion();
+
+            sql = "SELECT Año FROM [Peliculas] WHERE Titulo = '" + comboBox3.Items[comboBox3.SelectedIndex].ToString() + "'";
+            cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+            tbAno2.Text = Convert.ToInt32(cmd.ExecuteScalar()).ToString();
+            Conexion.CerrarConexion();
+
+            sql = "SELECT Productora FROM [Peliculas] WHERE Titulo = '" + comboBox3.Items[comboBox3.SelectedIndex].ToString() + "'";
+            cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+            tbProductora2.Text = cmd.ExecuteScalar().ToString();
+            Conexion.CerrarConexion();
+
+            sql = "SELECT Pais FROM [Peliculas] WHERE Titulo = '" + comboBox3.Items[comboBox3.SelectedIndex].ToString() + "'";
+            cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+            tbPais2.Text = cmd.ExecuteScalar().ToString();
+            Conexion.CerrarConexion();
+
+            sql = "SELECT Precio FROM [Peliculas] WHERE Titulo = '" + comboBox3.Items[comboBox3.SelectedIndex].ToString() + "'";
+            cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+            tbPrecio2.Text = Convert.ToInt32(cmd.ExecuteScalar()).ToString();
+            Conexion.CerrarConexion();
+
+            sql = "SELECT Director FROM [Peliculas] WHERE Titulo = '" + comboBox3.Items[comboBox3.SelectedIndex].ToString() + "'";
+            cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+            tbDirector2.Text = cmd.ExecuteScalar().ToString();
+            Conexion.CerrarConexion();
         }
     }
 }

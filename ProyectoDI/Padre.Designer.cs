@@ -71,7 +71,7 @@ namespace ProyectoDI
             this.relacionesToolStripMenuItem,
             this.realizarInformesToolStripMenuItem});
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
-            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.abrirToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
             // 
             // consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem
@@ -86,14 +86,14 @@ namespace ProyectoDI
             // página1ToolStripMenuItem
             // 
             this.página1ToolStripMenuItem.Name = "página1ToolStripMenuItem";
-            this.página1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.página1ToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.página1ToolStripMenuItem.Text = "Página 1";
             this.página1ToolStripMenuItem.Click += new System.EventHandler(this.página1ToolStripMenuItem_Click);
             // 
             // página2ToolStripMenuItem
             // 
             this.página2ToolStripMenuItem.Name = "página2ToolStripMenuItem";
-            this.página2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.página2ToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.página2ToolStripMenuItem.Text = "Página 2";
             this.página2ToolStripMenuItem.Click += new System.EventHandler(this.página2ToolStripMenuItem_Click);
             // 
@@ -118,7 +118,7 @@ namespace ProyectoDI
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -132,7 +132,7 @@ namespace ProyectoDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 561);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Padre";
