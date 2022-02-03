@@ -90,6 +90,10 @@ namespace ProyectoDI
             this.label29 = new System.Windows.Forms.Label();
             this.label30 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // button1
@@ -414,7 +418,7 @@ namespace ProyectoDI
             // 
             this.label16.AutoSize = true;
             this.label16.ForeColor = System.Drawing.Color.Lime;
-            this.label16.Location = new System.Drawing.Point(9, 210);
+            this.label16.Location = new System.Drawing.Point(9, 205);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(781, 13);
             this.label16.TabIndex = 31;
@@ -448,7 +452,7 @@ namespace ProyectoDI
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Lime;
-            this.label19.Location = new System.Drawing.Point(336, 228);
+            this.label19.Location = new System.Drawing.Point(336, 227);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(93, 17);
             this.label19.TabIndex = 35;
@@ -686,7 +690,7 @@ namespace ProyectoDI
             // 
             this.label29.AutoSize = true;
             this.label29.ForeColor = System.Drawing.Color.Lime;
-            this.label29.Location = new System.Drawing.Point(12, 292);
+            this.label29.Location = new System.Drawing.Point(12, 288);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(781, 13);
             this.label29.TabIndex = 58;
@@ -713,6 +717,46 @@ namespace ProyectoDI
             this.comboBox3.TabIndex = 59;
             this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.ForeColor = System.Drawing.Color.Lime;
+            this.label27.Location = new System.Drawing.Point(9, 412);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(781, 13);
+            this.label27.TabIndex = 61;
+            this.label27.Text = "_________________________________________________________________________________" +
+    "________________________________________________";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.Lime;
+            this.label31.Location = new System.Drawing.Point(41, 435);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(62, 17);
+            this.label31.TabIndex = 63;
+            this.label31.Text = "Género";
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Location = new System.Drawing.Point(12, 455);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(121, 21);
+            this.comboBox4.TabIndex = 62;
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            // 
+            // listView1
+            // 
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(153, 435);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(635, 93);
+            this.listView1.TabIndex = 64;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -720,6 +764,10 @@ namespace ProyectoDI
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 561);
             this.ControlBox = false;
+            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.label31);
+            this.Controls.Add(this.comboBox4);
+            this.Controls.Add(this.label27);
             this.Controls.Add(this.label30);
             this.Controls.Add(this.comboBox3);
             this.Controls.Add(this.label29);
@@ -852,5 +900,9 @@ namespace ProyectoDI
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ListView listView1;
     }
 }

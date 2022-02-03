@@ -105,6 +105,7 @@ namespace ProyectoDI
             {
                 comboBox1.Items.Add(dr[0].ToString());
                 comboBox2.Items.Add(dr[0].ToString());
+                comboBox4.Items.Add(dr[0].ToString());
             }
             Conexion.CerrarConexion();
         }
@@ -275,6 +276,38 @@ namespace ProyectoDI
                 MessageBox.Show(E.StackTrace);
                 labelResultadoModificar.Text = "Fallido";
             }
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int genero = comboBox4.SelectedIndex;
+            genero = genero + 1;
+            sql = "SELECT CodPelicula, Titulo, Duración, CodGenero FROM [Peliculas] WHERE CodGenero = " + genero + "";
+            SqlCommand cmd = new SqlCommand(sql, Conexion.pConexion);
+            Conexion.AbrirConexion();
+
+            SqlDataReader dr = null; // NO tiene NEW
+            dr = cmd.ExecuteReader();
+
+            listView1.Clear();
+            listView1.GridLines = true;
+            listView1.View = View.Details;
+            // añadimos columnas al listview1
+            listView1.Columns.Add(dr.GetName(0), 120, HorizontalAlignment.Right);
+            listView1.Columns.Add(dr.GetName(1), 160, HorizontalAlignment.Right);
+            listView1.Columns.Add(dr.GetName(2), 120, HorizontalAlignment.Right);
+            listView1.Columns.Add(dr.GetName(3), 120, HorizontalAlignment.Right);
+
+            while (dr.Read())
+            {
+                ListViewItem fila = new ListViewItem(dr.GetInt32(0).ToString());
+                fila.SubItems.Add(dr.GetString(1));
+                fila.SubItems.Add(dr.GetInt32(2).ToString());
+                fila.SubItems.Add(dr.GetInt32(3).ToString());
+                listView1.Items.Add(fila);
+
+            }
+            Conexion.CerrarConexion();
         }
     }
 }
