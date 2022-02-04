@@ -1,0 +1,143 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <aaa>
+    <CodVend>1</CodVend>
+    <NombVen>ANGEL BAENA MORALES</NombVen>
+    <DirecVen>LA LUNA 2, 4º</DirecVen>
+    <Telefono>913235568</Telefono>
+    <Salario>900</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>2</CodVend>
+    <NombVen>NURIA NUÑEZ JURADO</NombVen>
+    <DirecVen>ALMERIA 7</DirecVen>
+    <Telefono>913270012</Telefono>
+    <Salario>1100</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>3</CodVend>
+    <NombVen>ROSA COBO GARCIA</NombVen>
+    <DirecVen>OLIVO 4, 5º</DirecVen>
+    <Telefono>913224578</Telefono>
+    <Salario>900</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>4</CodVend>
+    <NombVen>MIGUEL ARMAS RUIZ</NombVen>
+    <DirecVen>CAÑAMAQUE 12</DirecVen>
+    <Telefono>913232367</Telefono>
+    <Salario>900</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>5</CodVend>
+    <NombVen>ANTONIO LOPEZ CARMONA</NombVen>
+    <DirecVen>ALAMOS 23, 2ºB</DirecVen>
+    <Telefono>913231212</Telefono>
+    <Salario>850</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>6</CodVend>
+    <NombVen>SALVADOR ORTEGA RUS</NombVen>
+    <DirecVen>CERON 3</DirecVen>
+    <Telefono>913224451</Telefono>
+    <Salario>800</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>7</CodVend>
+    <NombVen>MARIA MARMOL LOPEZ</NombVen>
+    <DirecVen>AV. MADRID 9, 7</DirecVen>
+    <Telefono>913270765</Telefono>
+    <Salario>600</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>8</CodVend>
+    <NombVen>RAFAEL MOTORO HOZ</NombVen>
+    <DirecVen>ALMERIA 22</DirecVen>
+    <Telefono>913259633</Telefono>
+    <Salario>850</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>9</CodVend>
+    <NombVen>CARLOS LOPEZ TORRES</NombVen>
+    <DirecVen>AV. MADRID 23</DirecVen>
+    <Telefono>913235847</Telefono>
+    <Salario>1000</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>10</CodVend>
+    <NombVen>FATIMA ZAFRA TORRES</NombVen>
+    <DirecVen>AV. MADRID 4, 1</DirecVen>
+    <Telefono>913226878</Telefono>
+    <Salario>700</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>11</CodVend>
+    <NombVen>ANA ROJAS PEREZ</NombVen>
+    <DirecVen>ALTAMIRA 20, 3ºB</DirecVen>
+    <Telefono>913761221</Telefono>
+    <Salario>700</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>12</CodVend>
+    <NombVen>TERESA SANCHEZ LOPEZ</NombVen>
+    <DirecVen>NOGAL 6</DirecVen>
+    <Telefono>913274556</Telefono>
+    <Salario>800</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>13</CodVend>
+    <NombVen>ALEJANDRO BUENO DIAZ</NombVen>
+    <DirecVen>NOGAL 5</DirecVen>
+    <Telefono>913236594</Telefono>
+    <Salario>600</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>14</CodVend>
+    <NombVen>ANTONIO OLMO GARCIA</NombVen>
+    <DirecVen>BAEZA 12 , 5ºA</DirecVen>
+    <Telefono>913277415</Telefono>
+    <Salario>900</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>15</CodVend>
+    <NombVen>LUIS ARRANZ PEÑA</NombVen>
+    <DirecVen>ROMA, 34, 2ºC</DirecVen>
+    <Telefono>913278394</Telefono>
+    <Salario>800</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>16</CodVend>
+    <NombVen>JAVIER MARTIN LOPEZ</NombVen>
+    <DirecVen>ALAVA 54, 7º A</DirecVen>
+    <Telefono>916548911</Telefono>
+    <Salario>750</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>17</CodVend>
+    <NombVen>CECILIA CASTRO ROS</NombVen>
+    <DirecVen>AROLAS 34, 6º</DirecVen>
+    <Telefono>916654320</Telefono>
+    <Salario>600</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>18</CodVend>
+    <NombVen>JOSE PRIETO SANZ</NombVen>
+    <DirecVen>MAIQUEZ 54, 2º</DirecVen>
+    <Telefono>912347865</Telefono>
+    <Salario>600</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>19</CodVend>
+    <NombVen>MANUEL BRITO PONS</NombVen>
+    <DirecVen>ORENSE, 62</DirecVen>
+    <Telefono>913564895</Telefono>
+    <Salario>600</Salario>
+  </aaa>
+  <aaa>
+    <CodVend>20</CodVend>
+    <NombVen>ROSA TORRES ALBA</NombVen>
+    <DirecVen>LATOSA, 45</DirecVen>
+    <Telefono>917654329</Telefono>
+    <Salario>600</Salario>
+  </aaa>
+</NewDataSet>
