@@ -47,6 +47,7 @@ namespace ProyectoDI
                 comboBox1.Items.Add(das2.Tables[0].Rows[i][0]);
             }
         }
+
         private void button1_Click(object sender, EventArgs e)
         {
             //los XMLs se guardan en el /bin/debug
@@ -87,6 +88,30 @@ namespace ProyectoDI
         private void button6_Click(object sender, EventArgs e)
         {
             das1.Tables[0].Rows.Find(textBox1.Text).Delete();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            textBox2.Text = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
+            if (!Convert.IsDBNull(this.dataGridView1.CurrentRow.Cells[4].Value))
+            {
+                textBox3.Text = Convert.ToString(dataGridView1.CurrentRow.Cells[4].Value);
+            }
+            else
+            {
+                textBox3.Text = "";
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            int fila = Convert.ToInt32(this.textBox4.Text);
+            fila = fila - 1;
+            if (fila >= 0 && fila < das1.Tables[0].Rows.Count)
+            {
+                this.dataGridView1.Rows[fila].Selected = true;
+                this.dataGridView1.CurrentCell = this.dataGridView1.Rows[fila].Cells[0];
+            }
         }
     }
 }
