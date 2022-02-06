@@ -21,6 +21,7 @@ namespace ProyectoDI
         private MiConexion Conexion = new MiConexion();
         private DataSet das1, das2;
         private SqlDataAdapter adap1, adap2, adap3, adap4;
+
         private void Form4_Load(object sender, EventArgs e)
         {
             sql = "select CodVend, NombVen,DirecVen,Telefono,Salario from Vendedores";
@@ -58,6 +59,34 @@ namespace ProyectoDI
             //leer XML
             das1.Tables[0].Clear();
             das1.ReadXml("Vendedores.xml");
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                adap1.Update(das1, "aaa");
+            }
+            catch (Exception EX)
+            {
+                MessageBox.Show(EX.ToString());
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            das1.Tables[0].Rows[0][1] += "x";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            String direcVen = Convert.ToString(das1.Tables[0].Rows[0][1]);
+            das1.Tables[0].Rows[0][1] = direcVen.Substring(0, direcVen.Length - 1);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            das1.Tables[0].Rows.Find(textBox1.Text).Delete();
         }
     }
 }
