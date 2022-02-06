@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -112,6 +113,64 @@ namespace ProyectoDI
                 this.dataGridView1.Rows[fila].Selected = true;
                 this.dataGridView1.CurrentCell = this.dataGridView1.Rows[fila].Cells[0];
             }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            String nombre;
+            String fila;
+            // Agregar "using Microsoft.VisualBasic;"
+            nombre = Interaction.InputBox("Introduce el nombre del vendedor:", "ProyectoDI", "");
+            for (int i = 0; i <= das1.Tables[0].Rows.Count - 1; i++)
+            {
+                fila = Convert.ToString(das1.Tables[0].Rows[i][1]);
+                if (fila.StartsWith(nombre))
+                {
+                    dataGridView1.Rows[i].Selected = true;
+                    dataGridView1.CurrentCell = dataGridView1[0, i];
+                    MessageBox.Show("Encontrado");
+                }
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DataSet das3 = new DataSet();
+            sql = "Select distinct CodCli from Facturas where CodCli >=" + comboBox1.Text + "order by CodCli";
+            SqlCommand cmd3 = new SqlCommand(sql, Conexion.pConexion);
+            adap3 = new SqlDataAdapter(cmd3);
+            adap3.Fill(das3, "ccc");
+            string acum = null;
+            int cont = 0;
+            for (int i = 0; i < das3.Tables[0].Rows.Count; i++)
+            {
+                acum += das3.Tables[0].Rows[i][0].ToString() + " - " + calcular(Convert.ToInt32(das3.Tables[0].Rows[i][0])).ToString() + Environment.NewLine;
+                cont++;
+                if (cont == 10)
+                {
+                    break;
+                }
+            }
+            MessageBox.Show(acum);
+        }
+
+        private double calcular(int a)
+        {
+            DataSet das4 = new DataSet();
+            double total = 0;
+            double aa, bb;
+            String id = a.ToString();
+            sql2 = "Select * from Facturas where CodCli=" + id;
+            SqlCommand cmd4 = new SqlCommand(sql2, Conexion.pConexion);
+            adap4 = new SqlDataAdapter(cmd4);
+            adap4.Fill(das4, "ddd");
+            for (int i = 0; i < das4.Tables[0].Rows.Count; i++)
+            {
+                aa = Convert.ToDouble(das4.Tables[0].Rows[i]["Importe"]);
+                bb = Convert.ToDouble(das4.Tables[0].Rows[i]["GastoEnvio"]);
+                total += aa + bb;
+            }
+            return total;
         }
     }
 }
