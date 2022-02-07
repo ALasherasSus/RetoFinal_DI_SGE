@@ -49,5 +49,46 @@ namespace ProyectoDI
             reportViewer1.RefreshReport();
             Conexion.CerrarConexion();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            double resultado = 0;
+            Conexion.AbrirConexion();
+            SqlCommand cmd = new SqlCommand();
+            SqlTransaction transaccion;
+
+            //Inicia la transaccion
+            transaccion = Conexion.pConexion.BeginTransaction();
+            cmd.Connection = Conexion.pConexion;
+            cmd.Transaction = transaccion;
+
+            try
+            {
+                cmd.CommandText = "select Precio from Peliculas where CodPelicula = 113";
+                resultado = Convert.ToDouble(cmd.ExecuteScalar());
+                MessageBox.Show(resultado.ToString(), "inicial");
+
+                cmd.CommandText = "update Peliculas set Precio = Precio + 5  where CodPelicula = 113";
+                cmd.ExecuteNonQuery();
+
+
+                cmd.CommandText = "update Productos set UnitPrice = UnitPrice + 7.99  where ProductID = 4"; // Aquí falla!
+                cmd.ExecuteNonQuery();
+
+                transaccion.Commit();
+
+            }
+            catch (Exception)
+            {
+                transaccion.Rollback(); // Con esto vuelve hacia atras 
+
+                MessageBox.Show("Se ha producido un error");    // Si ocurre un error
+
+                cmd.CommandText = "select Precio from Peliculas where CodPelicula = 113";
+                resultado = Convert.ToDouble(cmd.ExecuteScalar());
+
+                MessageBox.Show(resultado.ToString(), "¿Es igual?");
+            }
+        }
     }
 }

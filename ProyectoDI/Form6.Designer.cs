@@ -30,7 +30,7 @@ namespace ProyectoDI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource5 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -40,6 +40,7 @@ namespace ProyectoDI
             this.DataSet1 = new ProyectoDI.DataSet1();
             this.PeliculasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PeliculasTableAdapter = new ProyectoDI.DataSet1TableAdapters.PeliculasTableAdapter();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PeliculasBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -99,9 +100,9 @@ namespace ProyectoDI
             // 
             // reportViewer1
             // 
-            reportDataSource3.Name = "Report1";
-            reportDataSource3.Value = this.PeliculasBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
+            reportDataSource5.Name = "Report1";
+            reportDataSource5.Value = this.PeliculasBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource5);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "ProyectoDI.Report1.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 38);
             this.reportViewer1.Name = "reportViewer1";
@@ -123,6 +124,18 @@ namespace ProyectoDI
             // 
             this.PeliculasTableAdapter.ClearBeforeFill = true;
             // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Lime;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Location = new System.Drawing.Point(371, 9);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 23);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "Transacción";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -130,6 +143,7 @@ namespace ProyectoDI
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.ControlBox = false;
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label6);
@@ -157,5 +171,6 @@ namespace ProyectoDI
         private System.Windows.Forms.BindingSource PeliculasBindingSource;
         private DataSet1 DataSet1;
         private DataSet1TableAdapters.PeliculasTableAdapter PeliculasTableAdapter;
+        private System.Windows.Forms.Button button3;
     }
 }

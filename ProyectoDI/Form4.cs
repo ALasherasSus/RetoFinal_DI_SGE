@@ -141,7 +141,7 @@ namespace ProyectoDI
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             DataSet das3 = new DataSet();
-            sql = "Select distinct CodCli from Facturas where CodCli >=" + comboBox1.Text + "order by CodCli";
+            sql = "Select distinct CodCli from Facturas where CodCli =" + comboBox1.Text + "order by CodCli";
             SqlCommand cmd3 = new SqlCommand(sql, Conexion.pConexion);
             adap3 = new SqlDataAdapter(cmd3);
             adap3.Fill(das3, "ccc");
