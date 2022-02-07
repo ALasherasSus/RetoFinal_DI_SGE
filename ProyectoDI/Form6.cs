@@ -43,7 +43,7 @@ namespace ProyectoDI
             SqlDataAdapter adap1 = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             adap1.Fill(dt);
-            ReportDataSource rds = new ReportDataSource("DataSet1", dt);
+            ReportDataSource rds = new ReportDataSource("Report1", dt);
             reportViewer1.LocalReport.DataSources.Clear();
             reportViewer1.LocalReport.DataSources.Add(rds);
             reportViewer1.RefreshReport();
