@@ -40,6 +40,7 @@ namespace ProyectoDI
             this.realizarInformesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.milista = new System.Windows.Forms.ToolStripMenuItem();
+            this.jsonToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,7 +70,8 @@ namespace ProyectoDI
             this.consultasConectadoUtilizandoLaTablaPelículasToolStripMenuItem,
             this.consultasNoConectadoToolStripMenuItem,
             this.relacionesToolStripMenuItem,
-            this.realizarInformesToolStripMenuItem});
+            this.realizarInformesToolStripMenuItem,
+            this.jsonToolStripMenuItem});
             this.abrirToolStripMenuItem.Name = "abrirToolStripMenuItem";
             this.abrirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.abrirToolStripMenuItem.Text = "Abrir";
@@ -116,6 +118,7 @@ namespace ProyectoDI
             this.realizarInformesToolStripMenuItem.Name = "realizarInformesToolStripMenuItem";
             this.realizarInformesToolStripMenuItem.Size = new System.Drawing.Size(334, 22);
             this.realizarInformesToolStripMenuItem.Text = "Realizar informes";
+            this.realizarInformesToolStripMenuItem.Click += new System.EventHandler(this.realizarInformesToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
@@ -129,6 +132,13 @@ namespace ProyectoDI
             this.milista.Name = "milista";
             this.milista.Size = new System.Drawing.Size(99, 20);
             this.milista.Text = "Forms Abiertos";
+            // 
+            // jsonToolStripMenuItem
+            // 
+            this.jsonToolStripMenuItem.Name = "jsonToolStripMenuItem";
+            this.jsonToolStripMenuItem.Size = new System.Drawing.Size(334, 22);
+            this.jsonToolStripMenuItem.Text = "Json";
+            this.jsonToolStripMenuItem.Click += new System.EventHandler(this.jsonToolStripMenuItem_Click);
             // 
             // Padre
             // 
@@ -160,6 +170,7 @@ namespace ProyectoDI
         private System.Windows.Forms.ToolStripMenuItem página1ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem página2ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem milista;
+        private System.Windows.Forms.ToolStripMenuItem jsonToolStripMenuItem;
     }
 }
 

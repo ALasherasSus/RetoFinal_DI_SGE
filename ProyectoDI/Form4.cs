@@ -86,6 +86,11 @@ namespace ProyectoDI
             das1.Tables[0].Rows[0][1] = direcVen.Substring(0, direcVen.Length - 1);
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Padre.f1.Activate();
+        }
+
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             textBox2.Text = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
