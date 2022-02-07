@@ -309,5 +309,10 @@ namespace ProyectoDI
             }
             Conexion.CerrarConexion();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

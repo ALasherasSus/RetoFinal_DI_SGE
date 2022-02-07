@@ -86,14 +86,14 @@ namespace ProyectoDI
             // página1ToolStripMenuItem
             // 
             this.página1ToolStripMenuItem.Name = "página1ToolStripMenuItem";
-            this.página1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.página1ToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.página1ToolStripMenuItem.Text = "Página 1";
             this.página1ToolStripMenuItem.Click += new System.EventHandler(this.página1ToolStripMenuItem_Click);
             // 
             // página2ToolStripMenuItem
             // 
             this.página2ToolStripMenuItem.Name = "página2ToolStripMenuItem";
-            this.página2ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.página2ToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.página2ToolStripMenuItem.Text = "Página 2";
             this.página2ToolStripMenuItem.Click += new System.EventHandler(this.página2ToolStripMenuItem_Click);
             // 
@@ -109,6 +109,7 @@ namespace ProyectoDI
             this.relacionesToolStripMenuItem.Name = "relacionesToolStripMenuItem";
             this.relacionesToolStripMenuItem.Size = new System.Drawing.Size(334, 22);
             this.relacionesToolStripMenuItem.Text = "Relaciones";
+            this.relacionesToolStripMenuItem.Click += new System.EventHandler(this.relacionesToolStripMenuItem_Click);
             // 
             // realizarInformesToolStripMenuItem
             // 

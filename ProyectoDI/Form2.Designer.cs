@@ -268,6 +268,7 @@ namespace ProyectoDI
             this.label6.Size = new System.Drawing.Size(68, 25);
             this.label6.TabIndex = 14;
             this.label6.Text = "Pag. 1";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label8
             // 

@@ -21,6 +21,7 @@ namespace ProyectoDI
         private Form2 f2 = new Form2();
         private Form3 f3 = new Form3();
         private Form4 f4 = new Form4();
+        private Form5 f5 = new Form5();
 
         private void Padre_Load(object sender, EventArgs e)
         {
@@ -30,10 +31,12 @@ namespace ProyectoDI
             f2.MdiParent = this;
             f3.MdiParent = this;
             f4.MdiParent = this;
+            f5.MdiParent = this;
             f1.WindowState = FormWindowState.Maximized;
             f2.WindowState = FormWindowState.Maximized;
             f3.WindowState = FormWindowState.Maximized;
             f4.WindowState = FormWindowState.Maximized;
+            f5.WindowState = FormWindowState.Maximized;
             f1.Show();
             f1.Activate();
         }
@@ -59,6 +62,12 @@ namespace ProyectoDI
         {
             f4.Show();
             f4.Activate();
+        }
+
+        private void relacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            f5.Show();
+            f5.Activate();
         }
     }
 }
