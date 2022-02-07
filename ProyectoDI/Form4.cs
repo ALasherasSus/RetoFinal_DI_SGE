@@ -86,12 +86,7 @@ namespace ProyectoDI
             das1.Tables[0].Rows[0][1] = direcVen.Substring(0, direcVen.Length - 1);
         }
 
-        private void button6_Click(object sender, EventArgs e)
-        {
-            das1.Tables[0].Rows.Find(textBox1.Text).Delete();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             textBox2.Text = Convert.ToString(dataGridView1.CurrentRow.Cells[1].Value);
             if (!Convert.IsDBNull(this.dataGridView1.CurrentRow.Cells[4].Value))
@@ -102,6 +97,11 @@ namespace ProyectoDI
             {
                 textBox3.Text = "";
             }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            das1.Tables[0].Rows.Find(textBox1.Text).Delete();
         }
 
         private void button7_Click(object sender, EventArgs e)
