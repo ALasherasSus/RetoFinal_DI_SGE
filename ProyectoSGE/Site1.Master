@@ -1,0 +1,70 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Site1.master.vb" Inherits="ProyectoSGE.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        td {
+            background-color: #99CCFF;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1" style="border-style: solid; border-color: #FFFFFF; ">
+                <tr>
+                    <td class="auto-style4" style="font-size: 30px">
+                        <asp:Label ID="LabelTitulo" runat="server" Text="Proyecto"></asp:Label></td>
+                    <td class="auto-style3">
+                        <asp:Label ID="LabelUsuario" runat="server" Text="(Nombre de usuario)"></asp:Label>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Label ID="LabelIniciar" runat="server" Text="Iniciar sesión"></asp:Label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">
+                        <asp:Menu ID="Menu1" runat="server" BackColor="#E3EAEB" DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#666666" StaticSubMenuIndent="10px">
+                            <DynamicHoverStyle BackColor="#666666" ForeColor="White" />
+                            <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <DynamicMenuStyle BackColor="#E3EAEB" />
+                            <DynamicSelectedStyle BackColor="#1C5E55" />
+                            <Items>
+                                <asp:MenuItem Text="Ver Productos/Contar" Value="Ver Productos/Contar" NavigateUrl="~/VerProductos.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Añadir Registros" Value="Añadir Registros" NavigateUrl="~/AnadirRegistros.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Modificar Registros" Value="Modificar Registros" NavigateUrl="~/ModificarRegistros.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Borrar Registros" Value="Borrar Registros" NavigateUrl="~/BorrarRegistros.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="Order_IDs" Value="Order_IDs" NavigateUrl="~/OrderIDs.aspx"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Filtrar.aspx" Text="Filtrar" Value="Filtrar"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/EliminarCustomer.aspx" Text="Eliminar Customer" Value="Eliminar Customer"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/VerAmigos.aspx" Text="Ver Amigos" Value="Ver Amigos"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/OrderStyle.aspx" Text="Order Style" Value="Order Style"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/PostalCode.aspx" Text="PostalCode" Value="PostalCode"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Order Total.aspx" Text="Order Total" Value="Order Total"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/AmigosDetalles.aspx" Text="Amigos Detalles" Value="Amigos Detalles"></asp:MenuItem>
+                            </Items>
+                            <StaticHoverStyle BackColor="#666666" ForeColor="White" />
+                            <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                            <StaticSelectedStyle BackColor="#1C5E55" />
+                        </asp:Menu>
+                    </td>
+                    <td class="auto-style3">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style2" colspan="2">
+                        <asp:Label ID="LabelAutor" runat="server" Text="Arkaitz Lasheras"></asp:Label></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
